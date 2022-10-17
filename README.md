@@ -4,7 +4,7 @@
 https://amigoscode.com/p/spring-boot-master-class
 
 
-List of topics for this course
+List of topics for this course:
 
 
 Restful API's
