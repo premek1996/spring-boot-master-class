@@ -1,0 +1,36 @@
+customers-api-v1-uri: api/v1/customers
+customers-api-v2-uri: api/v2/customers
+info:
+  app:
+    description: Master Spring Boot
+    name: Spring Boot Master Class Course
+    version: 1.0.0
+jsonplaceholder:
+  url: https://jsonplaceholder.typicode.com
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+posts-api-v1-uri: api/v1/posts
+server:
+  error:
+    include-binding-errors: always
+    include-message: always
+    include-stacktrace: always
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    password: prod
+    url: jdbc:h2:mem:testdb-prod-env
+    username: prod
+  h2:
+    console:
+      enabled: true
+      path: /h2-prod
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
